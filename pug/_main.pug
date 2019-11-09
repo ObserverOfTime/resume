@@ -1,0 +1,61 @@
+if name
+  section#personal
+    h2#name: +icon('vcard')= name
+    #bio
+      each line in bio
+        div= line
+
+if experiences
+  section#experiences
+    h3: +icon('briefcase')= experiences.title
+    ul
+      each exp in experiences.list
+        li.experience
+          +icon('play')= exp.name
+          ol.exp-details
+            each detail in exp.details
+              li: +icon('right-open')= detail
+
+if publications
+  section#publications
+    h3: +icon('docs')= publications.title
+    ul
+      each pub in publications.list
+        li.publication
+          +icon('play')= pub.name
+          ol.pub-details
+            each detail in pub.details
+              li: +icon('right-open')= detail
+
+if projects
+  section#projects
+    h3: +icon('archive')= projects.title
+    ul
+      each proj in projects.list
+        li.project
+          +icon('play'): a(href=proj.url)= proj.name
+          ol.proj-details
+            each detail in proj.details
+              li: +icon('right-open')= detail
+
+if education
+  section#education
+    h3: +icon('graduation-cap')= education.title
+    ul
+      each edu in education.list
+        li.education
+          +icon('play')= edu.name
+          ol.edu-details
+            each detail in edu.details
+              li: +icon('right-open')= detail
+
+if achievements
+  section#achievements
+    h3: +icon('trophy')= achievements.title
+    ul
+      each ach in achievements.list
+        li.achievement
+          +icon('play')= ach.name
+          ol.ach-details
+            each detail in ach.details
+              li: +icon('right-open')= detail

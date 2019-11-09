@@ -1,0 +1,11 @@
+$font-family: 'Fira Sans';
+$font-subsets: 'greek';
+$page-size: A4 portrait;
+$page-width: 21;
+$page-height: 29.7;
+
+@import 'scss/_font';
+@import 'scss/_page';
+@import 'scss/_main';
+@import 'scss/_sidebar';
+@import 'scss/_icons';

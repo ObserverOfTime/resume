@@ -1,0 +1,51 @@
+name: Build & publish resume
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  build:
+    if: |
+      contains(github.event.commits[0].message, '[skip ci]') == false &&
+      contains(github.event.commits[0].message, '[ci skip]') == false
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v1.1.0
+        with:
+          fetch-depth: 1
+      - name: Set up NodeJS
+        uses: actions/setup-node@v1.2.0
+        with:
+          node-version: 12.13
+      - name: Install package
+        run: |
+          yarn install --frozen-lockfile
+          npm rebuild node-sass
+      - name: Audit dependencies
+        run: yarn audit
+      - name: Lint files
+        run: |
+          yarn run pug-lint
+          yarn run stylelint
+      - name: Build resume
+        run: |
+          yarn run build-GR
+          yarn run build-EN
+      - name: Set environment for release
+        if: github.event_name == 'push'
+        run: |
+          echo ::set-env name=RELEASE_TAG::"$(awk -F\" '/version/{print $4}' package.json)"
+          echo ::set-env name=RELEASE_NAME::"Release v$(awk -F\" '/version/{print $4}' package.json)"
+      - name: Publish release
+        if: github.event_name == 'push'
+        uses: meeDamian/github-release@v1.0.1
+        with:
+          token: ${{secrets.GITHUB_TOKEN}}
+          gzip: false
+          files: |
+            Resume-GR.pdf:build/Resume-GR.pdf
+            Resume-EN.pdf:build/Resume-EN.pdf

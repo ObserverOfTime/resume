@@ -1,0 +1,139 @@
+{
+  "name": "Ιωάννης Σομός",
+  "bio": [],
+  "location": "Αθήνα, Ελλάδα",
+  "experiences": {
+    "title": "Εμπειρίες",
+    "list": [
+      {
+        "name": "Παρακολούθησα FOSSCOMM 2019",
+        "details": [
+          "Εισαγωγή στο Vue.js.",
+          "Microservices με NodeJS, gRPC και Kubernetes.",
+          "Ανάπτυξη εφαρμογών με QML και Kirigami.",
+          "Πρακτική εξάσκιση σε OpenCV."
+        ]
+      },
+      {
+        "name": "Εθελοντής FOSSCOMM 2017",
+        "details": [
+          "Βοήθησα στην οργάνωση, το στήσιμο, και την αναμετάδωση του συνεδρίου.",
+          "Εργαστήριο Μετρικών Linux."
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Αξιοσημείωτα Έργα",
+    "list": [
+      {
+        "name": "7SegmentDisplays",
+        "url": "https://github.com/ObserverOfTime/7SegmentDisplays",
+        "details": [
+          "Βρίσκει τις μεγαλύτερες λέξεις που μπορούν να εμφανιστούν σε οθόνη επτά τμημάτων.",
+          "Υλοποιημένο σε πολλαπλές γλώσσες προγραμματισμού."
+        ]
+      },
+      {
+        "name": "yaenv",
+        "url": "https://github.com/ObserverOfTime/yaenv",
+        "details": [
+          "Αναλυτής αρχείων .env για Python."
+        ]
+      },
+      {
+        "name": "betterdiscordctl",
+        "url": "https://github.com/bb010g/betterdiscordctl",
+        "details": [
+          "Πρόγραμμα διαχείρισης του BetterDiscord σε Linux."
+        ]
+      },
+      {
+        "name": "transfer.js",
+        "url": "https://github.com/ObserverOfTime/transfer.js",
+        "details": [
+          "Εργαλείο γραμμής εντολών (Node.js) για μεταφορά αρχείων μέσω transfer.sh."
+        ]
+      },
+      {
+        "name": "discord.nvim",
+        "url": "https://github.com/ObserverOfTime/discord.nvim",
+        "details": [
+          "Discord RPC plugin για το Neovim."
+        ]
+      }
+    ]
+  },
+  "achievements": {
+    "title": "Επιτεύγματα",
+    "list": [
+      {
+        "name": "Ολοκλήρωση του Hacktoberfest 2019",
+        "details": [
+          "Υπέβαλα 8 pull requests μεταξύ 1 και 31 Οκτωβρίου."
+        ]
+      }
+    ]
+  },
+  "education": {
+    "title": "Εκπαίδευση",
+    "list": [
+      {
+        "name": "Χαροκόπειο Πανεπιστήμιο",
+        "details": [
+          "Τμήμα Πληροφορικής και Τηλεματικής (4ο έτος)."
+        ]
+      }
+    ]
+  },
+  "skills": {
+    "title": "Δεξιότητες",
+    "list": [
+      "Kotlin",
+      "Python",
+      "JavaScript (ES6+)",
+      "HTML5 & CSS3",
+      "Pug & SCSS",
+      "Django",
+      "C / C++",
+      "SQL",
+      "Bash",
+      "NGINX"
+    ]
+  },
+  "passions": {
+    "title": "Λατρίες",
+    "list": [
+      "Kotlin",
+      "Python",
+      "Ασφάλεια",
+      "Ανοιχτός Κώδικας",
+      "Linux",
+      "Neovim"
+    ]
+  },
+  "languages": {
+    "title": "Γλώσσες",
+    "list": [
+      {
+        "name": "Ελληνικά",
+        "details": [
+          "Μητρική γλώσσα"
+        ]
+      },
+      {
+        "name": "Αγγλικά",
+        "details": [
+          "EDI JETSET 6 (C1)",
+          "Cambridge B2 First"
+        ]
+      },
+      {
+        "name": "Γερμανικά",
+        "details": [
+          "Goethe-Zertifikat Β1"
+        ]
+      }
+    ]
+  }
+}

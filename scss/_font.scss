@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=#{$font-family}:400&subset=#{$font-subsets}');
+
+body {
+  font-family: quote($font-family), sans-serif;
+  font-weight: normal;
+  line-height: 1.5;
+  font-size: 100%;
+}

@@ -1,0 +1,147 @@
+{
+  "name": "Ioannis Somos",
+  "bio": [
+    "Jack of all trades, master of Kotlin.",
+    "Open Source enthusiast fixated on security."
+  ],
+  "location": "Athens, Greece",
+  "experiences": {
+    "title": "Experiences",
+    "list": [
+      {
+        "name": "Attended FOSSCOMM 2019",
+        "details": [
+          "Intro to Vue.js.",
+          "Microservices with NodeJS, gRPC and Kubernetes.",
+          "Developing apps with QML and Kirigami.",
+          "OpenCV Hands-on."
+        ]
+      },
+      {
+        "name": "FOSSCOMM 2017 Volunteer",
+        "details": [
+          "Helped organise, set up, and stream the conference.",
+          "Linux Metrics Workshop."
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Notable Projects",
+    "list": [
+      {
+        "name": "7SegmentDisplays",
+        "url": "https://github.com/ObserverOfTime/7SegmentDisplays",
+        "details": [
+          "Finds the longest words writable on a seven-segment display.",
+          "Implemented in multiple programming languages."
+        ]
+      },
+      {
+        "name": "yaenv",
+        "url": "https://github.com/ObserverOfTime/yaenv",
+        "details": [
+          "Yet another .env file parser for Python.",
+          "Supports both getting and setting variables."
+        ]
+      },
+      {
+        "name": "betterdiscordctl",
+        "url": "https://github.com/bb010g/betterdiscordctl",
+        "details": [
+          "Bash utility for managing BetterDiscord on Linux.",
+          "Can install, uninstall, and update BetterDiscord.",
+          "Supports all Discord versions, including Snap & Flatpak."
+        ]
+      },
+      {
+        "name": "transfer.js",
+        "url": "https://github.com/ObserverOfTime/transfer.js",
+        "details": [
+          "Node.js CLI tool for easy file sharing with transfer.sh.",
+          "Supports uploading and downloading files."
+        ]
+      },
+      {
+        "name": "discord.nvim",
+        "url": "https://github.com/ObserverOfTime/discord.nvim",
+        "details": [
+          "Discord RPC plugin for Neovim.",
+          "Implemented in Python + Vim script."
+        ]
+      }
+    ]
+  },
+  "achievements": {
+    "title": "Achievements",
+    "list": [
+      {
+        "name": "Completed Hacktoberfest 2019",
+        "details": [
+          "Submitted 8 pull requests between October 1~31."
+        ]
+      }
+    ]
+  },
+  "education": {
+    "title": "Education",
+    "list": [
+      {
+        "name": "Harokopio University",
+        "details": [
+          "Department of Informatics and Telematics (4th year)."
+        ]
+      }
+    ]
+  },
+  "skills": {
+    "title": "Skills",
+    "list": [
+      "Kotlin",
+      "Python",
+      "JavaScript (ES6+)",
+      "HTML5 & CSS3",
+      "Pug & SCSS",
+      "Django",
+      "C / C++",
+      "SQL",
+      "Bash",
+      "NGINX"
+    ]
+  },
+  "passions": {
+    "title": "Passions",
+    "list": [
+      "Kotlin",
+      "Python",
+      "Security",
+      "Open Source",
+      "Linux",
+      "Neovim"
+    ]
+  },
+  "languages": {
+    "title": "Languages",
+    "list": [
+      {
+        "name": "Greek",
+        "details": [
+          "Mother tongue"
+        ]
+      },
+      {
+        "name": "English",
+        "details": [
+          "EDI JETSET 6 (C1)",
+          "Cambridge B2 First"
+        ]
+      },
+      {
+        "name": "German",
+        "details": [
+          "Goethe-Zertifikat Β1"
+        ]
+      }
+    ]
+  }
+}
