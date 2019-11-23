@@ -3,6 +3,7 @@ $font-subsets: 'greek';
 $page-size: A4 portrait;
 $page-width: 21;
 $page-height: 29.7;
+$page-margins: 0;
 
 @import 'scss/_font';
 @import 'scss/_page';

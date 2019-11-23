@@ -16,6 +16,10 @@ See [usage](usage.md) for details.
 
 ## Changelog
 
+### v0.1.1
+
+* Changed `bio` to a string
+
 ### v0.1.0
 
 * Initial release

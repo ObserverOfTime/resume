@@ -1,9 +1,6 @@
 {
   "name": "Ioannis Somos",
-  "bio": [
-    "Jack of all trades, master of Kotlin.",
-    "Open Source enthusiast fixated on security."
-  ],
+  "bio": "Jack of all trades, master of Kotlin.\nOpen Source enthusiast fixated on security.",
   "location": "Athens, Greece",
   "experiences": {
     "title": "Experiences",

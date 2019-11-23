@@ -34,12 +34,14 @@ You can change any of these variables to alter the style of the resume.
 | :-------------: | :----------------------------------------------------------: |
 | `$font-family`  | The font family used in the document. Pick one from [Google Fonts][fonts]. |
 | `$font-subsets` |       The font's language subsets you wish to include.       |
-|  `$page-size`   |    The size of the PDF page. See [MDN][mdn] for details.     |
+|  `$page-size`   |    The size of the PDF page. See [MDN][size] for details.     |
 |  `$page-width`  | The width of the page (in cm) that corresponds to `$page-size`. |
 | `$page-height`  | The height of the page (in cm) that corresponds to `$page-size`. |
+| `$page-margins` | The [margins][margin] of the page. Set this when printing the resume. |
 
 [fonts]: https://fonts.google.com/
-[mdn]: https://developer.mozilla.org/en-US/docs/Web/CSS/@page/size
+[size]: https://developer.mozilla.org/en-US/docs/Web/CSS/@page/size
+[margin]: https://developer.mozilla.org/en-US/docs/Web/CSS/margin
 
 ### Edit the [`locale`](locale) files
 
@@ -51,7 +53,7 @@ but you may have to edit [`package.json`](package.json) and
 |              Key              |                         Description                          |
 | :---------------------------: | :----------------------------------------------------------: |
 |            `name`             |                          Your name.                          |
-|             `bio`             |          A list of lines that make up a short bio.           |
+|             `bio`             |                         A short bio.                         |
 |          `location`           |                        Your location.                        |
 |         `experiences`         | An object containing your experiences.<br>Delete it if you don't want them shown. |
 |      `experiences.title`      | The title of the `experiences` section.<br>Normally, you don't need to change this. |
@@ -88,9 +90,10 @@ but you may have to edit [`package.json`](package.json) and
 
 ### Build the resume
 
-*Replace `npm` with `yarn` if you're like me and prefer to use that.*
+*Skip to the [next step](#change-repository-links) if you'd rather let GitHub build it.*
 
 ```sh
+# you can use yarn instead of npm
 npm install # install the dependencies
 npm run build-EN # build the English resume
 npm run build-GR # build the Greek resume
@@ -115,7 +118,8 @@ Change these links to your own.
 | `package.json` |    `"name"`    |
 | `package.json` | `"repository"` |
 
-### Change version
+### Update version
 
-You should change the version in [`package.json`](package.json) every time you push to `master`.
+You should update the version in [`package.json`](package.json) every time you push to `master`.
+
 Otherwise, the automated release action may fail.

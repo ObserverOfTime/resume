@@ -1,9 +1,7 @@
 if name
   section#personal
     h2#name: +icon('vcard')= name
-    #bio
-      each line in bio
-        div= line
+    pre#bio= bio
 
 if experiences
   section#experiences
