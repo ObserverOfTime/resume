@@ -24,17 +24,19 @@
     "watch": "relaxed resume.pug"
   },
   "dependencies": {
-    "relaxedjs": "^0.2.3"
+    "relaxedjs": "^0.2.4"
   },
   "devDependencies": {
     "pug-lint": "^2.6.0",
-    "stylelint": "^12.0.0",
-    "stylelint-scss": "^3.13.0"
+    "stylelint": "^13.2.1",
+    "stylelint-scss": "^3.14.2"
   },
   "resolutions": {
-    "chokidar": "^3.0.0",
-    "jsdom": "^15.2.0",
-    "mermaid": "^8.4.2",
+    "acorn": "^7.1.1",
+    "chokidar": "^3.3.1",
+    "core-js": "^3.6.4",
+    "jsdom": "^16.2.1",
+    "mermaid": "^8.4.8",
     "nwmatcher": "^1.4.4",
     "unified": "^8.4.2"
   },
