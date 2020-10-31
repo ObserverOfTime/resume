@@ -11,7 +11,7 @@
           "Εισαγωγή στο Vue.js.",
           "Microservices με NodeJS, gRPC και Kubernetes.",
           "Ανάπτυξη εφαρμογών με QML και Kirigami.",
-          "Πρακτική εξάσκιση σε OpenCV."
+          "Πρακτική εξάσκηση σε OpenCV."
         ]
       },
       {
@@ -38,7 +38,8 @@
         "name": "yaenv",
         "url": "https://github.com/ObserverOfTime/yaenv",
         "details": [
-          "Αναλυτής αρχείων .env για Python."
+          "Αναλυτής αρχείων .env για Python.",
+          "Υποστηρίζει διάβασμα και γράψιμο μεταβλητών."
         ]
       },
       {
@@ -49,17 +50,17 @@
         ]
       },
       {
-        "name": "transfer.js",
-        "url": "https://github.com/ObserverOfTime/transfer.js",
-        "details": [
-          "Εργαλείο γραμμής εντολών (Node.js) για μεταφορά αρχείων μέσω transfer.sh."
-        ]
-      },
-      {
         "name": "discord.nvim",
         "url": "https://github.com/ObserverOfTime/discord.nvim",
         "details": [
           "Discord RPC plugin για το Neovim."
+        ]
+      },
+      {
+        "name": "transfer.js",
+        "url": "https://github.com/ObserverOfTime/transfer.js",
+        "details": [
+          "Εργαλείο γραμμής εντολών (Node.js) για μεταφορά αρχείων μέσω transfer.sh."
         ]
       }
     ]
@@ -68,9 +69,15 @@
     "title": "Επιτεύγματα",
     "list": [
       {
+        "name": "Ολοκλήρωση του Hacktoberfest 2020",
+        "details": [
+          "Υποβολή 5 pull requests μεταξύ 1 και 31 Οκτωβρίου."
+        ]
+      },
+      {
         "name": "Ολοκλήρωση του Hacktoberfest 2019",
         "details": [
-          "Υπέβαλα 8 pull requests μεταξύ 1 και 31 Οκτωβρίου."
+          "Υποβολή 8 pull requests μεταξύ 1 και 31 Οκτωβρίου."
         ]
       }
     ]
@@ -81,7 +88,7 @@
       {
         "name": "Χαροκόπειο Πανεπιστήμιο",
         "details": [
-          "Τμήμα Πληροφορικής και Τηλεματικής (4ο έτος)."
+          "Τμήμα Πληροφορικής και Τηλεματικής (επί πτυχίω)."
         ]
       }
     ]

@@ -26,7 +26,7 @@ jobs:
           yarn install --frozen-lockfile
           npm rebuild node-sass
       - name: Audit dependencies
-        run: yarn audit
+        run: yarn run audit
       - name: Lint files
         run: |
           yarn run pug-lint
@@ -38,13 +38,16 @@ jobs:
       - name: Set environment for release
         if: github.event_name == 'push'
         run: |
-          echo ::set-env name=RELEASE_TAG::"$(awk -F\" '/version/{print $4}' package.json)"
-          echo ::set-env name=RELEASE_NAME::"Release v$(awk -F\" '/version/{print $4}' package.json)"
+          awk -F\" '/version/{
+            print "RELEASE_TAG="$4"\nRELEASE_NAME=Release\\ v"$4
+          }' package.json >> $GITHUB_ENV
       - name: Publish release
         if: github.event_name == 'push'
-        uses: meeDamian/github-release@v1.0.1
+        uses: meeDamian/github-release@v2.0.3
         with:
           token: ${{secrets.GITHUB_TOKEN}}
+          tag: ${{env.RELEASE_TAG}}
+          name: ${{env.RELEASE_NAME}}
           gzip: false
           files: |
             Resume-GR.pdf:build/Resume-GR.pdf

@@ -38,8 +38,8 @@
         "name": "yaenv",
         "url": "https://github.com/ObserverOfTime/yaenv",
         "details": [
-          "Yet another .env file parser for Python.",
-          "Supports both getting and setting variables."
+          "A dotenv file parser for Python.",
+          "Supports both reading and writing variables."
         ]
       },
       {
@@ -52,19 +52,19 @@
         ]
       },
       {
-        "name": "transfer.js",
-        "url": "https://github.com/ObserverOfTime/transfer.js",
-        "details": [
-          "Node.js CLI tool for easy file sharing with transfer.sh.",
-          "Supports uploading and downloading files."
-        ]
-      },
-      {
         "name": "discord.nvim",
         "url": "https://github.com/ObserverOfTime/discord.nvim",
         "details": [
           "Discord RPC plugin for Neovim.",
           "Implemented in Python + Vim script."
+        ]
+      },
+      {
+        "name": "transfer.js",
+        "url": "https://github.com/ObserverOfTime/transfer.js",
+        "details": [
+          "Node.js CLI tool for easy file sharing with transfer.sh.",
+          "Supports uploading and downloading files."
         ]
       }
     ]
@@ -72,6 +72,12 @@
   "achievements": {
     "title": "Achievements",
     "list": [
+      {
+        "name": "Completed Hacktoberfest 2020",
+        "details": [
+          "Submitted 5 pull requests between October 1~31."
+        ]
+      },
       {
         "name": "Completed Hacktoberfest 2019",
         "details": [
@@ -86,7 +92,7 @@
       {
         "name": "Harokopio University",
         "details": [
-          "Department of Informatics and Telematics (4th year)."
+          "Department of Informatics and Telematics (pending graduate)."
         ]
       }
     ]

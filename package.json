@@ -1,6 +1,6 @@
 {
   "name": "@ObserverOfTime/resume",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "license": "BSD-3-Clause",
   "description": "My resume built with RelaxedJS",
   "repository": "github:ObserverOfTime/resume",
@@ -16,6 +16,7 @@
     "build/"
   ],
   "scripts": {
+    "audit": "improved-yarn-audit --exclude 1466",
     "build": "relaxed resume.pug --bo",
     "build-EN": "relaxed resume.pug --bo build/Resume-EN.pdf -l locale/en_GB.json",
     "build-GR": "relaxed resume.pug --bo build/Resume-GR.pdf -l locale/gr.json",
@@ -27,19 +28,20 @@
     "relaxedjs": "^0.2.4"
   },
   "devDependencies": {
+    "improved-yarn-audit": "^2.3.1",
     "pug-lint": "^2.6.0",
-    "stylelint": "^13.6.1",
+    "stylelint": "^13.7.2",
     "stylelint-scss": "^3.18.0"
   },
   "resolutions": {
-    "chokidar": "^3.4.1",
-    "core-js": "^3.6.5",
-    "jimp": "^0.14.0",
-    "jsdom": "^16.3.0",
-    "lodash": "^4.17.19",
-    "node-gyp": "^7.0.0",
+    "chokidar": "^3.4.3",
+    "jimp": "^0.16.1",
+    "jsdom": "^16.4.0",
+    "lodash": "^4.17.20",
+    "markdown-it-katex": "waylonflinn/markdown-it-katex#405b599",
+    "node-gyp": "^7.1.2",
     "nwmatcher": "^1.4.4",
-    "yargs-parser": "^18.1.3"
+    "yargs-parser": "^20.2.3"
   },
   "stylelint": {
     "defaultSeverity": "warning",
