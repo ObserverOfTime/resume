@@ -39,7 +39,7 @@ jobs:
         if: github.event_name == 'push'
         run: |
           awk -F\" '/version/{
-            print "RELEASE_TAG="$4"\nRELEASE_NAME=Release\\ v"$4
+            print "RELEASE_TAG="$4"\nRELEASE_NAME=Release\ v"$4
           }' package.json >> $GITHUB_ENV
       - name: Publish release
         if: github.event_name == 'push'
