@@ -14,13 +14,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v1.1.0
-        with:
-          fetch-depth: 1
+        uses: actions/checkout@v2
       - name: Set up NodeJS
-        uses: actions/setup-node@v1.2.0
+        uses: actions/setup-node@v2
         with:
-          node-version: 12.13
+          node-version: 14
       - name: Install package
         run: |
           yarn install --frozen-lockfile
@@ -43,7 +41,7 @@ jobs:
           }' package.json >> $GITHUB_ENV
       - name: Publish release
         if: github.event_name == 'push'
-        uses: meeDamian/github-release@v2.0.3
+        uses: meeDamian/github-release@2.0
         with:
           token: ${{secrets.GITHUB_TOKEN}}
           tag: ${{env.RELEASE_TAG}}

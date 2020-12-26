@@ -16,7 +16,6 @@
     "build/"
   ],
   "scripts": {
-    "audit": "improved-yarn-audit --exclude 1466",
     "build": "relaxed resume.pug --bo",
     "build-EN": "relaxed resume.pug --bo build/Resume-EN.pdf -l locale/en_GB.json",
     "build-GR": "relaxed resume.pug --bo build/Resume-GR.pdf -l locale/gr.json",
@@ -25,23 +24,23 @@
     "watch": "relaxed resume.pug"
   },
   "dependencies": {
-    "relaxedjs": "^0.2.4"
+    "relaxedjs": "RelaxedJS/ReLaXed#9bab05c"
   },
   "devDependencies": {
-    "improved-yarn-audit": "^2.3.1",
     "pug-lint": "^2.6.0",
-    "stylelint": "^13.7.2",
+    "stylelint": "^13.8.0",
     "stylelint-scss": "^3.18.0"
   },
   "resolutions": {
     "chokidar": "^3.4.3",
+    "highlight.js": "^10.4.1",
+    "ini": "^2.0.0",
     "jimp": "^0.16.1",
     "jsdom": "^16.4.0",
     "lodash": "^4.17.20",
-    "markdown-it-katex": "waylonflinn/markdown-it-katex#405b599",
     "node-gyp": "^7.1.2",
     "nwmatcher": "^1.4.4",
-    "yargs-parser": "^20.2.3"
+    "yargs-parser": "^20.2.4"
   },
   "stylelint": {
     "defaultSeverity": "warning",
