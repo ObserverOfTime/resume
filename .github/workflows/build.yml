@@ -8,9 +8,6 @@ on:
 
 jobs:
   build:
-    if: |
-      contains(github.event.commits[0].message, '[skip ci]') == false &&
-      contains(github.event.commits[0].message, '[ci skip]') == false
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -18,11 +15,9 @@ jobs:
       - name: Set up NodeJS
         uses: actions/setup-node@v2
         with:
-          node-version: 14
+          node-version: 16
       - name: Install package
-        run: |
-          yarn install --frozen-lockfile
-          npm rebuild node-sass
+        run: yarn --frozen-lockfile
       - name: Audit dependencies
         run: yarn run audit
       - name: Lint files

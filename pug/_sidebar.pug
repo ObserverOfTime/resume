@@ -14,33 +14,33 @@ nav#info
   if github
     #github: +icon('github')
       a(href=`https://github.com/${github}`)= github
-  if linkedin
-    #linkedin: +icon('linkedin-circled')
-      a(href=`https://www.linkedin.com/in/${linkedin}`)= linkedin
+  if twitter
+    #twitter: +icon('twitter')
+      a(href=`https://twitter.com/${twitter}`)= twitter
   if facebook
     #facebook: +icon('facebook-squared')
       a(href=`https://facebook.com/${facebook}`)= facebook
-  if twitter
-    #twitter: +icon('twitter')
-      a(href=`https://twitter.com/${twitter}`)= '@' + twitter
+  if linkedin
+    #linkedin: +icon('linkedin-circled')
+      a(href=`https://www.linkedin.com/in/${linkedin}`)= linkedin
 
 if skills
   section#skills
-    h3: +icon('tools')= skills.title
+    h3(lang=lang): +icon('tools')= skills.title
     ul
       each skill in skills.list
         li.skill: +icon('check')= skill
 
 if passions
   section#passions
-    h3: +icon('heart')= passions.title
+    h3(lang=lang): +icon('heart')= passions.title
     ul
       each passion in passions.list
         li.passion: +icon('check')= passion
 
 if languages
   section#languages
-    h3: +icon('language')= languages.title
+    h3(lang=lang): +icon('language')= languages.title
     ul
       each lang in languages.list
         li.lang

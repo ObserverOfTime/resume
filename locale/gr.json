@@ -1,4 +1,5 @@
 {
+  "lang": "el",
   "name": "Ιωάννης Σομός",
   "bio": "",
   "location": "Αθήνα, Ελλάδα",
@@ -17,7 +18,7 @@
       {
         "name": "Εθελοντής FOSSCOMM 2017",
         "details": [
-          "Βοήθησα στην οργάνωση, το στήσιμο, και την αναμετάδωση του συνεδρίου.",
+          "Βοήθησα στην οργάνωση, το στήσιμο, και την αναμετάδωση\n\tτου συνεδρίου.",
           "Εργαστήριο Μετρικών Linux."
         ]
       }
@@ -30,7 +31,7 @@
         "name": "7SegmentDisplays",
         "url": "https://github.com/ObserverOfTime/7SegmentDisplays",
         "details": [
-          "Βρίσκει τις μεγαλύτερες λέξεις που μπορούν να εμφανιστούν σε οθόνη επτά τμημάτων.",
+          "Βρίσκει τις μεγαλύτερες λέξεις που μπορούν να εμφανιστούν\n\tσε οθόνη επτά τμημάτων.",
           "Υλοποιημένο σε πολλαπλές γλώσσες προγραμματισμού."
         ]
       },
@@ -46,7 +47,7 @@
         "name": "betterdiscordctl",
         "url": "https://github.com/bb010g/betterdiscordctl",
         "details": [
-          "Πρόγραμμα διαχείρισης του BetterDiscord σε Linux."
+          "Πρόγραμμα διαχείρισης του BetterDiscord σε περιβάλλον Linux."
         ]
       },
       {
@@ -55,19 +56,18 @@
         "details": [
           "Discord RPC plugin για το Neovim."
         ]
-      },
-      {
-        "name": "transfer.js",
-        "url": "https://github.com/ObserverOfTime/transfer.js",
-        "details": [
-          "Εργαλείο γραμμής εντολών (Node.js) για μεταφορά αρχείων μέσω transfer.sh."
-        ]
       }
     ]
   },
   "achievements": {
     "title": "Επιτεύγματα",
     "list": [
+      {
+        "name": "Ολοκλήρωση του Hacktoberfest 2021",
+        "details": [
+          "Υποβολή 7 pull requests μεταξύ 1 και 31 Οκτωβρίου."
+        ]
+      },
       {
         "name": "Ολοκλήρωση του Hacktoberfest 2020",
         "details": [
@@ -88,7 +88,8 @@
       {
         "name": "Χαροκόπειο Πανεπιστήμιο",
         "details": [
-          "Τμήμα Πληροφορικής και Τηλεματικής (επί πτυχίω)."
+          "Τμήμα Πληροφορικής και Τηλεματικής",
+          "Πτυχιακή εργασία: «Ομομορφική κρυπτογράφηση με χρήση\n\tτης βιβλιοθήκης SEAL»"
         ]
       }
     ]
@@ -99,10 +100,12 @@
       "Kotlin",
       "Python",
       "JavaScript (ES6+)",
+      "TypeScript",
       "HTML5 & CSS3",
       "Pug & SCSS",
       "Django",
       "C / C++",
+      "Lua",
       "SQL",
       "Bash",
       "NGINX"

@@ -1,6 +1,6 @@
 {
-  "name": "@ObserverOfTime/resume",
-  "version": "0.1.2",
+  "name": "@observeroftime/resume",
+  "version": "0.2.0",
   "license": "BSD-3-Clause",
   "description": "My resume built with RelaxedJS",
   "repository": "github:ObserverOfTime/resume",
@@ -16,34 +16,39 @@
     "build/"
   ],
   "scripts": {
-    "build": "relaxed resume.pug --bo",
-    "build-EN": "relaxed resume.pug --bo build/Resume-EN.pdf -l locale/en_GB.json",
-    "build-GR": "relaxed resume.pug --bo build/Resume-GR.pdf -l locale/gr.json",
+    "audit": "improved-yarn-audit --exclude GHSA-p493-635q-r6gr",
+    "build": "relaxed resume.pug -t build --bo",
+    "build-EN": "relaxed resume.pug -t build --bo build/Resume-EN.pdf -l locale/en_GB.json",
+    "build-GR": "relaxed resume.pug -t build --bo build/Resume-GR.pdf -l locale/gr.json",
     "pug-lint": "pug-lint resume.pug pug/",
     "stylelint": "stylelint resume.scss scss/",
-    "watch": "relaxed resume.pug"
-  },
-  "dependencies": {
-    "relaxedjs": "RelaxedJS/ReLaXed#9bab05c"
+    "watch": "relaxed resume.pug -t build"
   },
   "devDependencies": {
+    "relaxedjs": "noverby/ReLaXed"
+  },
+  "optionalDependencies": {
+    "improved-yarn-audit": "^3.0.0",
+    "postcss-scss": "^4.0.3",
     "pug-lint": "^2.6.0",
-    "stylelint": "^13.8.0",
-    "stylelint-scss": "^3.18.0"
+    "stylelint": "^14.5.3",
+    "stylelint-scss": "^4.1.0"
   },
   "resolutions": {
-    "chokidar": "^3.4.3",
+    "ansi-regex": "^5.0.1",
     "highlight.js": "^10.4.1",
-    "ini": "^2.0.0",
-    "jimp": "^0.16.1",
-    "jsdom": "^16.4.0",
-    "lodash": "^4.17.20",
-    "node-gyp": "^7.1.2",
+    "glob-parent": "^5.1.2",
+    "jpeg-js": "^0.4.0",
+    "markdown-it": "^12.3.2",
+    "minimist": "^0.2.1",
+    "node-fetch": "^2.6.7",
+    "node-sass": "^7.0.1",
     "nwmatcher": "^1.4.4",
-    "yargs-parser": "^20.2.4"
+    "yargs-parser": "^21.0.1"
   },
   "stylelint": {
     "defaultSeverity": "warning",
+    "customSyntax": "postcss-scss",
     "plugins": ["stylelint-scss"],
     "rules": {
       "at-rule-name-case": "lower",
@@ -150,7 +155,7 @@
       "string-quotes": ["single", {"avoidEscape": true}],
       "unit-case": "lower",
       "unit-no-unknown": [true, {"severity": "error"}],
-      "value-keyword-case": ["lower", {"ignoreKeywords": ["A4"]}],
+      "value-keyword-case": ["lower", {"ignoreKeywords": ["A4", "currentColor"]}],
       "value-list-comma-newline-after": "always-multi-line",
       "value-list-comma-newline-before": "never-multi-line",
       "value-list-comma-space-after": "always",

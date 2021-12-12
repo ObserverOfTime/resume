@@ -1,4 +1,5 @@
 {
+  "lang": "en",
   "name": "Ioannis Somos",
   "bio": "Jack of all trades, master of Kotlin.\nOpen Source enthusiast fixated on security.",
   "location": "Athens, Greece",
@@ -58,20 +59,18 @@
           "Discord RPC plugin for Neovim.",
           "Implemented in Python + Vim script."
         ]
-      },
-      {
-        "name": "transfer.js",
-        "url": "https://github.com/ObserverOfTime/transfer.js",
-        "details": [
-          "Node.js CLI tool for easy file sharing with transfer.sh.",
-          "Supports uploading and downloading files."
-        ]
       }
     ]
   },
   "achievements": {
     "title": "Achievements",
     "list": [
+      {
+        "name": "Completed Hacktoberfest 2021",
+        "details": [
+          "Submitted 7 pull requests between October 1~31."
+        ]
+      },
       {
         "name": "Completed Hacktoberfest 2020",
         "details": [
@@ -92,7 +91,8 @@
       {
         "name": "Harokopio University",
         "details": [
-          "Department of Informatics and Telematics (pending graduate)."
+          "Department of Informatics and Telematics",
+          "Bachelor's thesis: “Homomorphic encryption using\n\tthe SEAL library”"
         ]
       }
     ]
@@ -103,10 +103,12 @@
       "Kotlin",
       "Python",
       "JavaScript (ES6+)",
+      "TypeScript",
       "HTML5 & CSS3",
       "Pug & SCSS",
       "Django",
       "C / C++",
+      "Lua",
       "SQL",
       "Bash",
       "NGINX"

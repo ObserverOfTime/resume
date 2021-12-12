@@ -52,6 +52,7 @@ but you may have to edit [`package.json`](package.json) and
 
 |              Key              |                         Description                          |
 | :---------------------------: | :----------------------------------------------------------: |
+|            `lang`             |                The [ISO 639-1][] language code.              |
 |            `name`             |                          Your name.                          |
 |             `bio`             |                         A short bio.                         |
 |          `location`           |                        Your location.                        |
@@ -87,6 +88,8 @@ but you may have to edit [`package.json`](package.json) and
 |       `languages.list`        |              A list of the languages you know.               |
 |    `languages.list.*.name`    |                  The name of this language.                  |
 |  `languages.list.*.details`   |       Some details about this language (e.g. degrees).       |
+
+[ISO 639-1]: https://www.w3docs.com/learn-html/html-language-codes.html#iso-639-1-language-codes-6
 
 ### Build the resume
 

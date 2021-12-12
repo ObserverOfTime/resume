@@ -16,6 +16,12 @@ See [usage](usage.md) for details.
 
 ## Changelog
 
+### v0.2.0
+
+* Enabled linebreaks in text
+* Introduced `lang` attribute
+* Added bachelor's thesis
+
 ### v0.1.2
 
 * Updated resume details

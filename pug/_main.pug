@@ -10,18 +10,18 @@ if experiences
       each exp in experiences.list
         li.experience
           +icon('play')= exp.name
-          ol.exp-details
+          ol.details
             each detail in exp.details
               li: +icon('right-open')= detail
 
 if publications
   section#publications
-    h3: +icon('docs')= publications.title
+    h3: +icon('book-open')= publications.title
     ul
       each pub in publications.list
         li.publication
           +icon('play')= pub.name
-          ol.pub-details
+          ol.details
             each detail in pub.details
               li: +icon('right-open')= detail
 
@@ -32,7 +32,7 @@ if projects
       each proj in projects.list
         li.project
           +icon('play'): a(href=proj.url)= proj.name
-          ol.proj-details
+          ol.details
             each detail in proj.details
               li: +icon('right-open')= detail
 
@@ -43,7 +43,7 @@ if education
       each edu in education.list
         li.education
           +icon('play')= edu.name
-          ol.edu-details
+          ol.details
             each detail in edu.details
               li: +icon('right-open')= detail
 
@@ -54,6 +54,6 @@ if achievements
       each ach in achievements.list
         li.achievement
           +icon('play')= ach.name
-          ol.ach-details
+          ol.details
             each detail in ach.details
               li: +icon('right-open')= detail
