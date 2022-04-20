@@ -1,3 +1,5 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
+
 name: Build & publish resume
 
 on:
@@ -15,22 +17,29 @@ jobs:
       - name: Set up NodeJS
         uses: actions/setup-node@v2
         with:
-          node-version: 16
-      - name: Install package
+          node-version: 17
+      - name: Install chromium # because puppeteer fails to do so
+        uses: browser-actions/setup-chrome@latest
+      - name: Install packages
         run: yarn --frozen-lockfile
+        env:
+          PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: 1
       - name: Audit dependencies
-        run: yarn run audit
+        run: yarn audit
       - name: Lint files
-        run: |
+        run: |-
           yarn run pug-lint
           yarn run stylelint
       - name: Build resume
-        run: |
+        run: |-
           yarn run build-GR
           yarn run build-EN
+        env:
+          PUPPETEER_EXECUTABLE_PATH: >-
+            /opt/hostedtoolcache/chromium/latest/x64/chrome
       - name: Set environment for release
         if: github.event_name == 'push'
-        run: |
+        run: |-
           awk -F\" '/version/{
             print "RELEASE_TAG="$4"\nRELEASE_NAME=Release\ v"$4
           }' package.json >> $GITHUB_ENV
@@ -42,6 +51,6 @@ jobs:
           tag: ${{env.RELEASE_TAG}}
           name: ${{env.RELEASE_NAME}}
           gzip: false
-          files: |
+          files: |-
             Resume-GR.pdf:build/Resume-GR.pdf
             Resume-EN.pdf:build/Resume-EN.pdf

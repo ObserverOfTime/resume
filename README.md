@@ -16,6 +16,11 @@ See [usage](usage.md) for details.
 
 ## Changelog
 
+### v0.2.1
+
+* Updated resume details
+* Enabled link highlighting
+
 ### v0.2.0
 
 * Enabled linebreaks in text

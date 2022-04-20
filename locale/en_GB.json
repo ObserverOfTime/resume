@@ -4,22 +4,14 @@
   "bio": "Jack of all trades, master of Kotlin.\nOpen Source enthusiast fixated on security.",
   "location": "Athens, Greece",
   "experiences": {
-    "title": "Experiences",
+    "title": "Volunteer Experience",
     "list": [
-      {
-        "name": "Attended FOSSCOMM 2019",
-        "details": [
-          "Intro to Vue.js.",
-          "Microservices with NodeJS, gRPC and Kubernetes.",
-          "Developing apps with QML and Kirigami.",
-          "OpenCV Hands-on."
-        ]
-      },
       {
         "name": "FOSSCOMM 2017 Volunteer",
         "details": [
-          "Helped organise, set up, and stream the conference.",
-          "Linux Metrics Workshop."
+          "Helped organise and set up the conference.",
+          "Responsible for streaming one of the venues.",
+          "Attended the Linux Metrics Workshop."
         ]
       }
     ]
@@ -28,11 +20,18 @@
     "title": "Notable Projects",
     "list": [
       {
-        "name": "7SegmentDisplays",
-        "url": "https://github.com/ObserverOfTime/7SegmentDisplays",
+        "name": "MangAdventure",
+        "url": "https://github.com/mangadventure/MangAdventure",
         "details": [
-          "Finds the longest words writable on a seven-segment display.",
-          "Implemented in multiple programming languages."
+          "A feature-rich manga/comic hosting CMS.",
+          "Written in Django, SCSS, and vanilla JS."
+        ]
+      },
+      {
+        "name": "Tachiyomi Extensions",
+        "url": "https://github.com/tachiyomiorg/tachiyomi-extensions",
+        "details": [
+          "Source extensions for the Tachiyomi\n\tmanga/comic reader app."
         ]
       },
       {
@@ -50,14 +49,6 @@
           "Bash utility for managing BetterDiscord on Linux.",
           "Can install, uninstall, and update BetterDiscord.",
           "Supports all Discord versions, including Snap & Flatpak."
-        ]
-      },
-      {
-        "name": "discord.nvim",
-        "url": "https://github.com/ObserverOfTime/discord.nvim",
-        "details": [
-          "Discord RPC plugin for Neovim.",
-          "Implemented in Python + Vim script."
         ]
       }
     ]
@@ -92,7 +83,7 @@
         "name": "Harokopio University",
         "details": [
           "Department of Informatics and Telematics",
-          "Bachelor's thesis: “Homomorphic encryption using\n\tthe SEAL library”"
+          "Bachelor's thesis: “Homomorphic encryption\n\tusing the SEAL library”"
         ]
       }
     ]
@@ -137,7 +128,7 @@
       {
         "name": "English",
         "details": [
-          "EDI JETSET 6 (C1)",
+          "Pearson EDI Level 7 (C2)",
           "Cambridge B2 First"
         ]
       },

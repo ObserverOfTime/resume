@@ -4,17 +4,8 @@
   "bio": "",
   "location": "Αθήνα, Ελλάδα",
   "experiences": {
-    "title": "Εμπειρίες",
+    "title": "Εθελοντισμός",
     "list": [
-      {
-        "name": "Παρακολούθησα FOSSCOMM 2019",
-        "details": [
-          "Εισαγωγή στο Vue.js.",
-          "Microservices με NodeJS, gRPC και Kubernetes.",
-          "Ανάπτυξη εφαρμογών με QML και Kirigami.",
-          "Πρακτική εξάσκηση σε OpenCV."
-        ]
-      },
       {
         "name": "Εθελοντής FOSSCOMM 2017",
         "details": [
@@ -134,7 +125,7 @@
       {
         "name": "Αγγλικά",
         "details": [
-          "EDI JETSET 6 (C1)",
+          "Pearson EDI Level 7 (C2)",
           "Cambridge B2 First"
         ]
       },

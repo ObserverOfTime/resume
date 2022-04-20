@@ -1,6 +1,6 @@
 {
   "name": "@observeroftime/resume",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "license": "BSD-3-Clause",
   "description": "My resume built with RelaxedJS",
   "repository": "github:ObserverOfTime/resume",
@@ -28,22 +28,23 @@
     "relaxedjs": "noverby/ReLaXed"
   },
   "optionalDependencies": {
-    "improved-yarn-audit": "^3.0.0",
     "postcss-scss": "^4.0.3",
     "pug-lint": "^2.6.0",
     "stylelint": "^14.5.3",
     "stylelint-scss": "^4.1.0"
   },
   "resolutions": {
+    "@braintree/sanitize-url": "^6.0.0",
     "ansi-regex": "^5.0.1",
     "highlight.js": "^10.4.1",
     "glob-parent": "^5.1.2",
     "jpeg-js": "^0.4.0",
     "markdown-it": "^12.3.2",
-    "minimist": "^0.2.1",
+    "mkdirp": "^1.0.4",
     "node-fetch": "^2.6.7",
     "node-sass": "^7.0.1",
     "nwmatcher": "^1.4.4",
+    "pug": "^3.0.2",
     "yargs-parser": "^21.0.1"
   },
   "stylelint": {
