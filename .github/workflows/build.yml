@@ -13,9 +13,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Set up NodeJS
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: 17
       - name: Install chromium # because puppeteer fails to do so
@@ -32,14 +32,14 @@ jobs:
           yarn run stylelint
       - name: Build resume
         run: |-
-          yarn run build-GR
-          yarn run build-EN
+          yarn run build-GR --bo
+          yarn run build-EN --bo
         env:
           PUPPETEER_EXECUTABLE_PATH: >-
             /opt/hostedtoolcache/chromium/latest/x64/chrome
       - name: Set environment for release
         if: github.event_name == 'push'
-        run: |-
+        run: >-
           awk -F\" '/version/{
             print "RELEASE_TAG="$4"\nRELEASE_NAME=Release\ v"$4
           }' package.json >> $GITHUB_ENV

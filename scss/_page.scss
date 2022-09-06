@@ -1,12 +1,17 @@
 @page {
   size: $page-size;
-  margin: $page-margins;
   -relaxed-page-width: #{$page-width}cm;
   -relaxed-page-height: #{$page-height}cm;
 }
 
 body {
-  margin: 0;
+  gap: 0 1em;
+  display: grid;
+  grid-template: 1fr 2.5em / auto 2fr;
+  grid-template-areas:
+    'sidebar main'
+    'sidebar footer';
+  margin: $page-margins;
   @media not print {
     width: #{$page-width}cm;
     height: #{$page-height}cm;
@@ -14,18 +19,16 @@ body {
 }
 
 footer {
-  font-size: smaller;
-  position: relative;
-  float: right;
-  bottom: -1.5em;
-  right: 0.5em;
   opacity: 0.25;
+  grid-area: footer;
+  text-align: right;
+  margin-right: 1.5em;
 }
 
 ol, ul {
-  list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -36,11 +39,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a, a:hover {
+  outline: none;
   color: inherit;
   text-decoration: underline;
   text-decoration-color: darkcyan;
   text-decoration-thickness: 10%;
-  outline: none;
 }
 
 pre {

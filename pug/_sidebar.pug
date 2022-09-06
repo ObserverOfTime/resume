@@ -4,25 +4,25 @@ nav#info
       span= location
   if phone
     #phone: +icon('phone')
-      a(href=`tel:${phone}`)= phone
+      a(href='tel:' + phone)= phone
   if email
     #email: +icon('mail')
-      a(href=`mailto:${email}`)= email
+      a(href='mailto:' + email)= email
   if homepage
     #homepage: +icon('globe')
       a(href=homepage)= RegExp('^(?:https?://)?(.*)').exec(homepage)[1]
   if github
     #github: +icon('github')
-      a(href=`https://github.com/${github}`)= github
+      a(href='https://github.com/' + github)= github
   if twitter
     #twitter: +icon('twitter')
-      a(href=`https://twitter.com/${twitter}`)= twitter
+      a(href='https://twitter.com/' + twitter)= twitter
   if facebook
     #facebook: +icon('facebook-squared')
-      a(href=`https://facebook.com/${facebook}`)= facebook
+      a(href='https://facebook.com/' + facebook)= facebook
   if linkedin
     #linkedin: +icon('linkedin-circled')
-      a(href=`https://www.linkedin.com/in/${linkedin}`)= linkedin
+      a(href='https://www.linkedin.com/in/' + linkedin)= linkedin
 
 if skills
   section#skills

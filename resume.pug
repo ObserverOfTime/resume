@@ -1,6 +1,6 @@
 mixin icon(name)
-  svg(class=`icon i-${name}`)
-    use(href=`#${name}`)
+  svg(class='icon i-' + name)
+    use(href='#' + name)
   block
 
 include pug/_info.pug

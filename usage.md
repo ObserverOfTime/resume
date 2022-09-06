@@ -4,7 +4,7 @@ Feel free to submit an issue if you need help.
 
 ### Clone the repository
 
-```sh
+```bash
 git clone https://github.com/ObserverOfTime/resume
 cd resume
 ```
@@ -13,7 +13,7 @@ cd resume
 
 This file contains some basic info about you.
 
-```js
+```pug
 - var phone = '' // your phone number
 - var email = '' // your email address
 - var homepage = '' // your homepage
@@ -95,11 +95,11 @@ but you may have to edit [`package.json`](package.json) and
 
 *Skip to the [next step](#change-repository-links) if you'd rather let GitHub build it.*
 
-```sh
+```bash
 # you can use yarn instead of npm
 npm install # install the dependencies
-npm run build-EN # build the English resume
-npm run build-GR # build the Greek resume
+npm run build-EN --bo # build the English resume
+npm run build-GR --bo # build the Greek resume
 ```
 
 You should now have the English resume in `build/Resume-EN.pdf`

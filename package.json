@@ -1,6 +1,6 @@
 {
   "name": "@observeroftime/resume",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "license": "BSD-3-Clause",
   "description": "My resume built with RelaxedJS",
   "repository": "github:ObserverOfTime/resume",
@@ -16,16 +16,14 @@
     "build/"
   ],
   "scripts": {
-    "audit": "improved-yarn-audit --exclude GHSA-p493-635q-r6gr",
-    "build": "relaxed resume.pug -t build --bo",
-    "build-EN": "relaxed resume.pug -t build --bo build/Resume-EN.pdf -l locale/en_GB.json",
-    "build-GR": "relaxed resume.pug -t build --bo build/Resume-GR.pdf -l locale/gr.json",
+    "build": "relaxed resume.pug -t build",
+    "build-EN": "relaxed resume.pug -t build build/Resume-EN.pdf -l locale/en_GB.json",
+    "build-GR": "relaxed resume.pug -t build build/Resume-GR.pdf -l locale/gr.json",
     "pug-lint": "pug-lint resume.pug pug/",
-    "stylelint": "stylelint resume.scss scss/",
-    "watch": "relaxed resume.pug -t build"
+    "stylelint": "stylelint resume.scss scss/"
   },
   "devDependencies": {
-    "relaxedjs": "noverby/ReLaXed"
+    "relaxedjs": "RelaxedJS/ReLaXed#pull/200/head"
   },
   "optionalDependencies": {
     "postcss-scss": "^4.0.3",
@@ -34,18 +32,15 @@
     "stylelint-scss": "^4.1.0"
   },
   "resolutions": {
-    "@braintree/sanitize-url": "^6.0.0",
-    "ansi-regex": "^5.0.1",
-    "highlight.js": "^10.4.1",
-    "glob-parent": "^5.1.2",
-    "jpeg-js": "^0.4.0",
-    "markdown-it": "^12.3.2",
-    "mkdirp": "^1.0.4",
-    "node-fetch": "^2.6.7",
-    "node-sass": "^7.0.1",
+    "constantinople": "^4.0.1",
+    "highlight.js": "^11.6.0",
+    "jpeg-js": "^0.4.4",
+    "jsdom": "^20.0.0",
+    "jstransformer-markdown-it": "^3.0.0",
+    "mermaid": "^9.1.6",
     "nwmatcher": "^1.4.4",
-    "pug": "^3.0.2",
-    "yargs-parser": "^21.0.1"
+    "scss-tokenizer": "^0.4.3",
+    "yargs-parser": "^21.1.1"
   },
   "stylelint": {
     "defaultSeverity": "warning",
@@ -74,7 +69,7 @@
       "declaration-block-semicolon-newline-before": "never-multi-line",
       "declaration-block-semicolon-space-after": "always-single-line",
       "declaration-block-semicolon-space-before": "never",
-      "declaration-colon-space-after": "always",
+      "declaration-colon-space-after": "always-single-line",
       "declaration-colon-space-before": "never",
       "declaration-empty-line-before": "never",
       "font-family-name-quotes": "always-unless-keyword",
