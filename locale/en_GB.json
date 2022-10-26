@@ -57,21 +57,12 @@
     "title": "Achievements",
     "list": [
       {
-        "name": "Completed Hacktoberfest 2021",
+        "name": "Completed Hacktoberfest for 4 consecutive years",
         "details": [
-          "Submitted 7 pull requests between October 1~31."
-        ]
-      },
-      {
-        "name": "Completed Hacktoberfest 2020",
-        "details": [
-          "Submitted 5 pull requests between October 1~31."
-        ]
-      },
-      {
-        "name": "Completed Hacktoberfest 2019",
-        "details": [
-          "Submitted 8 pull requests between October 1~31."
+          "Submitted 8 pull requests in October 2019.",
+          "Submitted 5 pull requests in October 2020.",
+          "Submitted 7 pull requests in October 2021.",
+          "Submitted 4 pull requests in October 2022."
         ]
       }
     ]
@@ -79,6 +70,12 @@
   "education": {
     "title": "Education",
     "list": [
+      {
+        "name": "Athens University of Economics and Business",
+        "details": [
+          "MSc in Information Systems Development and\n\tSecurity (ongoing)"
+        ]
+      },
       {
         "name": "Harokopio University",
         "details": [

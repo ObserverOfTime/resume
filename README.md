@@ -16,6 +16,10 @@ See [usage](usage.md) for details.
 
 ## Changelog
 
+### v0.2.3
+
+* Updated resume details
+
 ### v0.2.2
 
 * Switched to grid layout
